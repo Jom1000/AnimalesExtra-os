@@ -1,0 +1,25 @@
+.container{
+    display:grid;
+    gap:10px;
+ 
+    grid-template-areas:"animal1 foto foto foto foto  animal2"
+                        "animal3 foto foto foto foto  animal4"
+                        "animal5 foto foto foto foto  animal6"
+                        "animal7 animal8 animal9 animal10 animal11 animal12";
+
+}
+
+.animal1{grid-area: animal1;}
+.animal2{grid-area: animal2;}
+.animal3{grid-area: animal3;}
+.animal4{grid-area: animal4;}
+.animal5{grid-area: animal5;}
+.animal6{grid-area: animal6;}
+.animal7{grid-area: animal7;}
+.animal8{grid-area: animal8;}
+.animal9{grid-area: animal9;}
+.animal10{grid-area: animal10;}
+.animal11{grid-area: animal11;}
+.animal12{grid-area: animal12;}
+
+.foto{grid-area:foto;}

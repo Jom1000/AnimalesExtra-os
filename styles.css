@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background: url(fondo.webp);    
+    min-height: 100vh;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    background: hotpink;
+    margin-bottom: 20px;;
+}
+
+h1{
+    font-size:4em;
+    text-align: center;
+    padding:10px;
+    color:darkcyan;
+    text-shadow: 2px 2px 5px black, -1px -1px 2px #fff;
+}
+
+.container{
+    background: rgba(255,255,255,.3);
+    padding: 10px;
+    margin:auto;
+    padding:20px;
+    width:95%;
+}
+
+#foto{
+    border:2px solid black;
+    background: yellow;
+    display:flex;
+    
+
+}
+
+#imagen{
+    border: 1px solid red;
+    height:350px;
+    width:400px;
+    
+}
+
+.texto{
+    font-size:2em;
+    text-align:center;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Satisfy', cursive;
+    padding: 10px;;
+}
+
+.nombre{
+    border:2px solid green;
+    background: orange;
+    width:150px;
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: centeR;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    cursor: help; 
+    
+}
+
+.nombre p{
+    text-align: center;
+}
+
+footer{
+    width:100%;
+    background: hotpink;
+    font-size:.7em;
+    text-align: center;
+    padding:10px;
+    color:rgb(3, 58, 58);
+    text-shadow: 2px 2px 5px black, -1px -1px 2px #fff;
+    position:absolute;
+    bottom:0;
+}
+
+@media screen and (max-width: 768px) { 
+
+    
+
+
+    .container{
+               
+        width:90%;
+        display:grid;
+        gap:5px; 
+        grid-template-areas:" foto foto foto foto"
+                        " foto foto foto foto "
+                        " foto foto foto foto"
+                        "animal7 animal8 animal9 animal10"
+                        "animal2  animal4 animal11 animal12"
+                        "animal6  animal1   animal3 animal5  ";
+    }
+
+    .animal1{grid-area: animal1;}
+    .animal2{grid-area: animal2;}
+    .animal3{grid-area: animal3;}
+    .animal4{grid-area: animal4;}
+    .animal5{grid-area: animal5;}
+    .animal6{grid-area: animal6;}
+    .animal7{grid-area: animal7;}
+    .animal8{grid-area: animal8;}
+    .animal9{grid-area: animal9;}
+    .animal10{grid-area: animal10;}
+    .animal11{grid-area: animal11;}
+    .animal12{grid-area: animal12;}
+
+    .foto{grid-area:foto;
+        place-items: center;
+        display:flex;
+        flex-direction:column;
+    }
+
+   footer{
+       width:90%;
+       position:relative;
+       
+       margin:auto;
+       
+   }
+
+
+ }
+
+
+ @media screen and (max-width: 480px){
+
+    .container{
+               
+        width:90%;
+        display:grid;
+        gap:5px; 
+        grid-template-areas:" foto foto foto "
+                        " foto foto foto  "
+                        " foto foto foto "
+                        "animal7 animal8 animal9"
+                        "animal2  animal4 animal11"
+                        "animal6  animal1  animal3"
+                        "animal10 animal12 animal5";
+    }
+
+    .animal1{grid-area: animal1;}
+    .animal2{grid-area: animal2;}
+    .animal3{grid-area: animal3;}
+    .animal4{grid-area: animal4;}
+    .animal5{grid-area: animal5;}
+    .animal6{grid-area: animal6;}
+    .animal7{grid-area: animal7;}
+    .animal8{grid-area: animal8;}
+    .animal9{grid-area: animal9;}
+    .animal10{grid-area: animal10;}
+    .animal11{grid-area: animal11;}
+    .animal12{grid-area: animal12;}
+
+    .foto{grid-area:foto;
+        place-items: center;
+        display:flex;
+        flex-direction:column;
+    }
+
+
+ }
